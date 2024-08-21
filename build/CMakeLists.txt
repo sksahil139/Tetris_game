@@ -20,3 +20,10 @@ set(SOURCES
 add_executable(TetrisGame ${SOURCES})
 
 target_link_libraries(TetrisGame ${SDL2_LIBRARIES} ${SDL2_gfx_LIBRARIES})
+
+#for compiling the program g++ -o tetris_game src/main.cpp src/IO.cpp src/Game.cpp src/Pieces.cpp src/Board.cpp \
+    # -I/opt/homebrew/Cellar/sdl2/2.30.6/include \
+    # -I/opt/homebrew/Cellar/sdl2_gfx/1.0.4/include \
+    # -L/opt/homebrew/Cellar/sdl2/2.30.6/lib \
+    # -L/opt/homebrew/Cellar/sdl2_gfx/1.0.4/lib \
+    # -lSDL2 -lSDL2_gfx 
